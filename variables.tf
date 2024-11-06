@@ -118,3 +118,33 @@ variable "operator_email" {
   type        = string
   default     = "henry4we2008@gmail.com"
 }
+
+# Auto scaling group variable
+
+#Launch Template Name
+variable "launch_template_name" {
+  description = "The name of the launch template for the Auto Scaling group."
+  type        = string
+  default     = "dev-launch-template"
+}
+
+# AMI ID
+variable "ami_id" {
+  description = "The ID of the AMI to use for the instances."
+  type        = string
+   default    ="ami-0f6211640b4f70044"
+   #default     = "ami-0190cc606dff9fde6"
+}
+#Instance Type
+variable "instance_type" {
+  description = "The type of instance to use for the Auto Scaling group."
+  type        = string
+  default     = "t2.micro"
+}
+
+#Key Pair Name
+variable "key_pair_name" {
+  description = "The name of the existing EC2 key pair."
+  type        = string
+  default     = "myKey"
+}
