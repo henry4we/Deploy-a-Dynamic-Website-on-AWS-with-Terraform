@@ -73,3 +73,32 @@ variable "ssh_location" {
   description = "IP address that can SSH into the instances"
   type        = string
 }
+
+
+# RDS Variables
+variable "database_snapshot_identifier" {
+  default     = "arn:aws:rds:eu-west-2:651271204467:snapshot:showwise"
+  description = "Database snapshot identifier"
+  type        = string
+}
+
+#Define a Variable for the Database Instance Class:
+variable "database_instance_class" {
+  default     = "db.t3.micro"
+  description = "Instance class for the RDS database"
+  type        = string
+}
+
+#Define a Variable for the Database Instance Identifier:
+variable "database_instance_identifier" {
+  default     = "dev-rds-db"
+  description = "Identifier for the RDS database instance"
+  type        = string
+}
+
+#Define a Variable for Multi-AZ Deployment:
+variable "multi_az_deployment" {
+  default     = false
+  description = "Enable Multi-AZ deployment for RDS"
+  type        = bool
+}
