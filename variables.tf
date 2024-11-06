@@ -102,3 +102,12 @@ variable "multi_az_deployment" {
   description = "Enable Multi-AZ deployment for RDS"
   type        = bool
 }
+
+
+# Application Load Balancer Variables
+#SSL certificate
+variable "ssl_certificate_arn" {
+  description = "The ARN of the SSL certificate for the ALB"
+  type        = string
+  default     = "arn:aws:acm:eu-west-2:651271204467:certificate/4c45b3f9-0b23-497f-897f-ed9a5e1d19cf"
+}
