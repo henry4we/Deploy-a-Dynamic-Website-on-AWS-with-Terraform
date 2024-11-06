@@ -66,3 +66,10 @@ variable "private_data_subnet_az2_cidr" {
   type        = string
 }
 
+
+# Security Groups Variables
+variable "ssh_location" {
+  default     = "0.0.0.0/0"
+  description = "IP address that can SSH into the instances"
+  type        = string
+}
