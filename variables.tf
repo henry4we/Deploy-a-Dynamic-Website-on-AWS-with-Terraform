@@ -111,3 +111,10 @@ variable "ssl_certificate_arn" {
   type        = string
   default     = "arn:aws:acm:eu-west-2:651271204467:certificate/4c45b3f9-0b23-497f-897f-ed9a5e1d19cf"
 }
+
+# SNS notifications
+variable "operator_email" {
+  description = "The email address to receive SNS notifications."
+  type        = string
+  default     = "henry4we2008@gmail.com"
+}
