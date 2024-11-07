@@ -148,3 +148,17 @@ variable "key_pair_name" {
   type        = string
   default     = "myKey"
 }
+
+# Route 53 Variables
+variable "domain_name" {
+  description = "The domain name registered in Route 53"
+  type        = string
+  default     = "henrydevs.com" 
+}
+
+#Define Variables for Subdomain
+variable "record_name" {
+  description = "The subdomain name (e.g., www)"
+  type        = string
+  default     = "www"
+}
