@@ -107,9 +107,6 @@ The infrastructure comprises the following components:
 5. **Verify**  
    Check the AWS Management Console to confirm the resources were created successfully.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
